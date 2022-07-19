@@ -1,0 +1,171 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-color: #F8E7EA;
+}
+
+header {
+    margin-left: 200px;
+}
+
+header img {
+    width: 25px;
+}
+
+span {
+    margin-left: 100px;
+}
+
+#logo {
+    padding: 5px 0px;
+}
+
+#menu {
+    background-color: cornsilk;
+}
+
+#main-menu {
+    float: right;
+    display: flex;
+    list-style: none;
+    margin: 15px 0px 15px 0px;
+}
+
+#main-menu li {
+    position: relative;
+}
+
+#main-menu li a {
+    color: black;
+    display: block;
+    padding: 18px 20px;
+    text-decoration: none;
+}
+
+#main-menu ul.sub-menu {
+    position: absolute;
+    background-color: wheat;
+    padding: 15px 0px;
+    list-style: none;
+    width: 200px;
+    border: 1px solid gray;
+    display: none;
+}
+
+#main-menu li:hover>ul.sub-menu{
+    display: block;
+}
+#main-menu li:hover a{
+    color: chocolate;
+}
+#main-menu ul.sub-menu a {
+    padding: 8px 15px;
+    border-bottom: 1px solid;
+}
+
+#main-menu ul.sub-menu li:last-child a {
+    border: 5px;
+}
+
+#main-menu>li>a{
+    position: relative;
+}
+
+#main-menu ul.sub-menu ul.sub-menu {
+    left: 199px;
+    top: -15px;
+}
+
+#main-menu>li>a::before {
+    content: "";
+    height: 4px;
+    width: 0px;
+    background: red;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+#main-menu>li:hover>a::before {
+    display: block;
+}
+
+
+/* CSS Tin tuc */
+.hinhanh img {
+    width: 100%;
+    height: 500px;
+}
+
+.chitiettintuc {
+    margin: 20px 70px 150px 70px;
+    line-height: 30px;
+}
+
+.chitiettintuc h1 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.chitiettintuc a {
+    color: chocolate;
+    text-decoration: none;
+}
+
+.chitiettintuc img {
+    margin-left: 300px;
+}
+
+.chitiettintuc2 img {
+    margin-left: 270px;
+}
+
+.tieude {
+    font-size: 30px;
+}
+
+.chuthich {
+    font-size: 13px;
+    margin-left: 350px;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.chuthich2 {
+    font-size: 13px;
+    margin-left: 230px;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+/* Footer */
+table {
+    padding: 50px;
+    width: 100%;
+    height: 280px;
+    background-color: #FFD24C;
+    border-spacing: 130px 5px;
+}
+
+
+tr {
+    color: #394BA0;
+}
+
+.hd {
+    font-weight: 600;
+}
+
+td {
+    padding: 10px;
+}
+
+tr img {
+    width: 25px;
+}
+
+.maps {
+    float: right;
+}

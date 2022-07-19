@@ -1,0 +1,98 @@
+.menutong {
+    background-color: aquamarine;
+}
+
+#main-menu a>img{
+    width: 150px;
+}
+
+#main-menu {
+    display: flex;
+    list-style: none;
+}
+
+#main-menu li {
+    position: relative;
+}
+
+#main-menu li a {
+    font-weight: 550;
+    font-size: 20px;
+    color: black;
+    display: block;
+    padding: 18px 20px;
+    text-decoration: none;
+}
+
+/* Code Sản phẩm */
+.tieude {
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    background-color: black;
+    height: 50px;
+}
+
+ul.sp {
+    text-align: center;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+ul.sp li {
+    flex-basis: 24%;
+    background-color: aquamarine;
+    border: 1px solid black;
+}
+
+ul.sp img {
+    max-width: 100%;
+    height: auto;
+}
+
+ul .product-name {
+    font-size: 10px;
+    font-weight: 600;
+    color: black;
+    text-decoration: none;
+}
+
+.giasanpham {
+    font-weight: 600;
+    color: red;
+}
+
+ul.sp li:hover {
+    border: 2px solid aquamarine;
+}
+
+@media screen and (max-width: 600px) {
+    div.sp {
+      width: 100%;
+    }
+
+    #main-menu a>img{
+        width: 50px;
+    }
+
+    #main-menu li a {
+        width: 20%;
+    }
+
+    #main-menu li a {
+        font-weight: 550;
+        font-size: 10px;
+        color: black;
+        display: block;
+        padding: 18px 20px;
+        text-decoration: none;
+    }
+
+    ul.sp li  {
+        margin-top: 50px;
+        flex-basis: 40%;
+    }
+
+}
