@@ -24,6 +24,11 @@ span {
     padding: 5px 0px;
 }
 
+#menu>a>img {
+    width: 200px;
+    height: 100px;
+}
+
 #menu {
     background-color: cornsilk;
 }

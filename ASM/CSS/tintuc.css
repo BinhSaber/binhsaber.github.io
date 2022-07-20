@@ -28,6 +28,11 @@ span {
     background-color: cornsilk;
 }
 
+#menu>a>img {
+    width: 200px;
+    height: 100px;
+}
+
 #main-menu {
     float: right;
     display: flex;

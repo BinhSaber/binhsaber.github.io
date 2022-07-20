@@ -20,6 +20,11 @@ span {
     margin-left: 100px;
 }
 
+#menu>a>img {
+    width: 200px;
+    height: 100px;
+}
+
 /* Code thanh menu */
 #logo {
     padding: 5px 0px;

@@ -29,6 +29,11 @@ span {
     background-color: cornsilk;
 }
 
+#menu>a>img {
+    width: 200px;
+    height: 100px;
+}
+
 #main-menu {
     float: right;
     display: flex;
@@ -104,6 +109,11 @@ span {
 .lienhe {
     padding: 70px;
 }
+
+.lienhe .header {
+    margin-bottom: 70px;
+}
+
 .maps {
     margin-top: 30px;
     margin-bottom: 50px;

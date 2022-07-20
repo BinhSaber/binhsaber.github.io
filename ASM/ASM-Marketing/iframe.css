@@ -1,0 +1,27 @@
+.container{
+    margin: auto;
+}
+.container h1 {
+    color: red;
+    text-align: center;
+}
+h3{
+    font-size: 20px;
+}
+p {
+    font-size: 20px;
+}
+tr{
+    height: 40px;
+}
+th{
+    font-size: 25px;
+    padding: 10px;
+}
+td{
+    font-size: 15px;
+    padding: 5px;
+}
+.doitratable{
+    margin: auto;
+}
