@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đồng hồ thông minh - SmartWatch</title>
+    <link rel="stylesheet" href="../CSS/laptop.css">
+    <script src="../JS/trangchu.js"></script>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <div id="menu">
+                <a href="trangchu.html" id="logo">
+                    <img src="../Img/logo.png">
+                </a>
+            <ul id="main-menu">
+                <li><a href="trangchu.html">Trang chủ</a></li>
+                <li><a href="gioithieu.html">Giới thiệu</a></li>
+                <li><a href="menu.html">Menu</a>
+                    <ul class="sub-menu">
+                        <li><a href="laptop.html">Laptop</a></li>
+                        <li><a href="mobile.html">Mobile</a></li>
+                        <li><a href="smartwatch.html">SmartWatch</a></li>
+                        <li><a href="tainghe.html">Tai nghe</a></li>
+                        <li><a href="phukien.html">Phụ kiện</a></li>
+                    </ul>
+                </li>
+                <li><a href="tintuc.html">Tin tức</a></li>
+                <li><a href="chinhsach.html">Chính sách</a></li>
+                <li><a href="lienhe.html">Liên hệ</a></li>
+                <li style="margin-left:220px;"><a href="dangky.html">Đăng ký</a></li>
+                <li><a>-</a></li>
+                <li><a href="dangnhap.html">Đăng nhập</a></li>
+            </ul>
+            </div>
+            <div class="menu-con">
+                <div class="bagach">
+                    <ion-icon name="menu"></ion-icon>
+                </div>
+            </div>
+        </nav>
+        <nav>
+            <body onload="load();">
+                <div class="than">
+                    <img src="../Img/1.jpg" id="hinh" alt="">
+                    <button class="trai" type="button" onclick="back();"> < </button> 
+                        <span id="ten">1/3</span>
+                            <button class="phai" type="button" onclick="next();"> > </button> 
+                </div>
+            </body>
+            <script>
+                var index = 1;
+                hinh = function () {
+                    document.getElementById("hinh").src = imgs[index];
+                    index++;
+                    if (index == 3) {
+                        index = 0;
+                    }
+                }
+                setInterval(next, 2000)
+            </script>
+        </nav>
+        <div class="sp">
+        <div class="heading">
+            <h3>Đồng hồ thông minh</h3>
+        </div>
+        <div id="sanphammoi">
+            <ul class="sanpham">
+                <li>
+                    <div class="product-item">
+                        <div class="product-top">
+                            <a  href="" class="sanpham1">
+                                <img src="../Img/3-sp1.jpg">
+                            </a>
+                        </div>
+                        <div class="thongtinsanpham">
+                            <a href="" class="product-name">Huewei Band 7</a>
+                            <div class="giasanpham">990.000đ</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="product-item">
+                        <div class="product-top">
+                            <a  href="" class="sanpham1">
+                                <img src="../Img/3-sp2.jpg">
+                            </a>
+                        </div>
+                        <div class="thongtinsanpham">
+                            <a href="" class="product-name">Xiaomi Mi Band 7</a>
+                            <div class="giasanpham">1.190.000đ</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="product-item">
+                        <div class="product-top">
+                            <a  href="" class="sanpham1">
+                                <img src="../Img/3-sp3.jpg">
+                            </a>
+                        </div>
+                        <div class="thongtinsanpham">
+                            <a href="" class="product-name">Apple Watch SE 40mm (GPS)</a>
+                            <div class="giasanpham">6.590.000đ</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="product-item">
+                        <div class="product-top">
+                            <a  href="" class="sanpham1">
+                                <img src="../Img/3-sp4.jpg">
+                            </a>
+                        </div>
+                        <div class="thongtinsanpham">
+                            <a href="" class="product-name">Myalo KidsPhone K84</a>
+                            <div class="giasanpham">2.690.000đ</div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div id="sanphambanchay">
+            <ul class="sanpham">
+                <li>
+                    <div class="product-item">
+                        <div class="product-top">
+                            <a  href="" class="sanpham1">
+                                <img src="../Img/3-sp5.jpg">
+                            </a>
+                        </div>
+                        <div class="thongtinsanpham">
+                            <a href="" class="product-name">Xiaomi Mi Band 6</a>
+                            <div class="giasanpham">949.000đ</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="product-item">
+                        <div class="product-top">
+                            <a  href="" class="sanpham1">
+                                <img src="../Img/3-sp6.jpg">
+                            </a>
+                        </div>
+                        <div class="thongtinsanpham">
+                            <a href="" class="product-name">Huewei Watch GT3 dây da</a>
+                            <div class="giasanpham">5.990.000đ</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="product-item">
+                        <div class="product-top">
+                            <a  href="" class="sanpham1">
+                                <img src="../Img/3-sp7.jpg">
+                            </a>
+                        </div>
+                        <div class="thongtinsanpham">
+                            <a href="" class="product-name">Xiaomi Mi Watch</a>
+                            <div class="giasanpham">1.990.000đ</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="product-item">
+                        <div class="product-top">
+                            <a  href="" class="sanpham1">
+                                <img src="../Img/3-sp8.jpg">
+                            </a>
+                        </div>
+                        <div class="thongtinsanpham">
+                            <a href="" class="product-name">Xiaomi Redmi Watch 2 Lite</a>
+                            <div class="giasanpham">1.390.000đ</div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div id="sanphammoi">
+            <ul class="sanpham">
+                <li>
+                    <div class="product-item">
+                        <div class="product-top">
+                            <a  href="" class="sanpham1">
+                                <img src="../Img/3-sp9.jpg">
+                            </a>
+                        </div>
+                        <div class="thongtinsanpham">
+                            <a href="" class="product-name">Samsung Galaxy Watch4</a>
+                            <div class="giasanpham">5.290.000đ</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="product-item">
+                        <div class="product-top">
+                            <a  href="" class="sanpham1">
+                                <img src="../Img/3-sp10.jpg">
+                            </a>
+                        </div>
+                        <div class="thongtinsanpham">
+                            <a href="" class="product-name">Huewei Watch Fit 2</a>
+                            <div class="giasanpham">2.990.000đ</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="product-item">
+                        <div class="product-top">
+                            <a  href="" class="sanpham1">
+                                <img src="../Img/3-sp11.jpg">
+                            </a>
+                        </div>
+                        <div class="thongtinsanpham">
+                            <a href="" class="product-name">Huami Amazfit GTS 2</a>
+                            <div class="giasanpham">3.090.000đ</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="product-item">
+                        <div class="product-top">
+                            <a  href="" class="sanpham1">
+                                <img src="../Img/3-sp12.jpg">
+                            </a>
+                        </div>
+                        <div class="thongtinsanpham">
+                            <a href="" class="product-name">Huewei Watch GT3 Pro dây silicone</a>
+                            <div class="giasanpham">7.990.000đ</div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div id="sanphammoi">
+            <ul class="sanpham">
+                <li>
+                    <div class="product-item">
+                        <div class="product-top">
+                            <a  href="" class="sanpham1">
+                                <img src="../Img/3-sp13.jpg">
+                            </a>
+                        </div>
+                        <div class="thongtinsanpham">
+                            <a href="" class="product-name">Huawei Watch Fit new</a>
+                            <div class="giasanpham">1.690.000đ</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="product-item">
+                        <div class="product-top">
+                            <a  href="" class="sanpham1">
+                                <img src="../Img/3-sp14.jpg">
+                            </a>
+                        </div>
+                        <div class="thongtinsanpham">
+                            <a href="" class="product-name">Huewei Band 6</a>
+                            <div class="giasanpham">849.000đ</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="product-item">
+                        <div class="product-top">
+                            <a  href="" class="sanpham1">
+                                <img src="../Img/3-sp15.jpg">
+                            </a>
+                        </div>
+                        <div class="thongtinsanpham">
+                            <a href="" class="product-name">Soundpeats Watch 2</a>
+                            <div class="giasanpham">790.000đ</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="product-item">
+                        <div class="product-top">
+                            <a  href="" class="sanpham1">
+                                <img src="../Img/3-sp16.jpg">
+                            </a>
+                        </div>
+                        <div class="thongtinsanpham">
+                            <a href="" class="product-name">Huami Amazfit GTS 2 Mini</a>
+                            <div class="giasanpham">1.990.000đ</div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div id="sanphammoi">
+            <ul class="sanpham">
+                <li>
+                    <div class="product-item">
+                        <div class="product-top">
+                            <a  href="" class="sanpham1">
+                                <img src="../Img/3-sp17.jpg">
+                            </a>
+                        </div>
+                        <div class="thongtinsanpham">
+                            <a href="" class="product-name">Amazfit Bip 3 Pro</a>
+                            <div class="giasanpham">1.390.000đ</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="product-item">
+                        <div class="product-top">
+                            <a  href="" class="sanpham1">
+                                <img src="../Img/3-sp18.jpg">
+                            </a>
+                        </div>
+                        <div class="thongtinsanpham">
+                            <a href="" class="product-name">Xiaomi Watch S1 Active</a>
+                            <div class="giasanpham">4.290.000đ</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="product-item">
+                        <div class="product-top">
+                            <a  href="" class="sanpham1">
+                                <img src="../Img/3-sp19.jpg">
+                            </a>
+                        </div>
+                        <div class="thongtinsanpham">
+                            <a href="" class="product-name">Huami Amazfit Neo</a>
+                            <div class="giasanpham">500.000đ</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="product-item">
+                        <div class="product-top">
+                            <a  href="" class="sanpham1">
+                                <img src="../Img/3-sp20.jpg">
+                            </a>
+                        </div>
+                        <div class="thongtinsanpham">
+                            <a href="" class="product-name">Apple Watch Series 7 41mm</a>
+                            <div class="giasanpham">10.190.000đ</div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+</div>
+    <footer>
+        <table>
+            <tr>
+                <td class="hd">Giới thiệu</td>
+                <td class="hd">Điều khoản</td>
+                <td class="hd"><img src="../Icon/icon-dienthoai.jpg">Đặt hàng: 1800 6936</td>
+            </tr>
+            <tr>
+                <td>Về chúng tôi</td>
+                <td>Điều khoản sử dụng</td>
+                <td class="hd" colspan="2"><img src="../Icon/Icon-diachi.png">Liên hệ</td>
+            </tr>
+            <tr>
+                <td>Sản phẩm</td>
+                <td>Quy tắc bảo mật</td>
+                <td>Tầng 3-4 Hub Building
+                    Q.Bình Thạnh, TP.Hồ Chí Minh</td>
+            </tr>
+            <tr>
+                <td>Khuyến mãi</td>
+                <td>Điều khoản</td>
+                <td>195/10E Điện Biên Phủ, P.15 ,</td>
+            </tr>
+            <tr>
+                <td>Tin tức</td>
+                <td></td>
+                <td>Q.Bình Thạnh, TP.Hồ Chí Minh</td>
+            </tr>
+            <tr>
+                <td>Cửa hàng</td>
+            </tr>
+            <tr>
+                <td>Liên hệ</td>
+            </tr>
+            <!-- <tr>
+                <td colspan="4"><div class="maps">
+                    <iframe src="https://www.google.com/maps/d/u/0/embed?mid=15OEDqG2herN9fyLjjI1P8xorc8Jaqwvy&ehbc=2E312F" 
+                width="340" height="360"></iframe>
+                </div></td>
+            </tr> -->
+        </table>
+        </footer>

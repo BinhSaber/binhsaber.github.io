@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phụ kiện</title>
+    <link rel="stylesheet" href="../CSS/phukien.css">
+    <script src="../JS/trangchu.js"></script>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <div id="menu">
+                <a href="trangchu.html" id="logo">
+                    <img src="../Img/logo.png">
+                </a>
+            <ul id="main-menu">
+                <li><a href="trangchu.html">Trang chủ</a></li>
+                <li><a href="gioithieu.html">Giới thiệu</a></li>
+                <li><a href="menu.html">Menu</a>
+                    <ul class="sub-menu">
+                        <li><a href="laptop.html">Laptop</a></li>
+                        <li><a href="mobile.html">Mobile</a></li>
+                        <li><a href="smartwatch.html">SmartWatch</a></li>
+                        <li><a href="tainghe.html">Tai nghe</a></li>
+                        <li><a href="phukien.html">Phụ kiện</a></li>
+                    </ul>
+                </li>
+                <li><a href="tintuc.html">Tin tức</a></li>
+                <li><a href="chinhsach.html">Chính sách</a></li>
+                <li><a href="lienhe.html">Liên hệ</a></li>
+                <li style="margin-left:220px;"><a href="dangky.html">Đăng ký</a></li>
+                <li><a>-</a></li>
+                <li><a href="dangnhap.html">Đăng nhập</a></li>
+            </ul>
+            </div>
+            <div class="menu-con">
+                <div class="bagach">
+                    <ion-icon name="menu"></ion-icon>
+                </div>
+            </div>
+        </nav>
+        <nav>
+            <body onload="load();">
+                <div class="than">
+                    <img src="../Img/1.jpg" id="hinh" alt="">
+                    <button class="trai" type="button" onclick="back();"> < </button> 
+                        <span id="ten">1/3</span>
+                            <button class="phai" type="button" onclick="next();"> > </button> 
+                </div>
+            </body>
+            <script>
+                var index = 1;
+                hinh = function () {
+                    document.getElementById("hinh").src = imgs[index];
+                    index++;
+                    if (index == 3) {
+                        index = 0;
+                    }
+                }
+                setInterval(next, 2000)
+            </script>
+        </nav>
+        <div class="sp">
+        <div class="heading">
+            <h3>Phụ kiện</h3>
+        </div>
+        <div id="sanphammoi">
+            <ul class="sanpham">
+                <li>
+                    <div class="product-item">
+                        <div class="product-top">
+                            <a  href="" class="sanpham1">
+                                <img src="../Img/5-sp1.jpg">
+                            </a>
+                        </div>
+                        <div class="thongtinsanpham">
+                            <a href="" class="product-name">Dán Chống va đập cho iPad Pro 11</a>
+                            <div class="giasanpham">200.000đ</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="product-item">
+                        <div class="product-top">
+                            <a  href="" class="sanpham1">
+                                <img src="../Img/5-sp2.jpg">
+                            </a>
+                        </div>
+                        <div class="thongtinsanpham">
+                            <a href="" class="product-name">Miếng dán cường lực iPhone 11 Pro Max</a>
+                            <div class="giasanpham">351.000đ</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="product-item">
+                        <div class="product-top">
+                            <a  href="" class="sanpham1">
+                                <img src="../Img/5-sp3.jpg">
+                            </a>
+                        </div>
+                        <div class="thongtinsanpham">
+                            <a href="" class="product-name">Dán chống va đập KingKong</a>
+                            <div class="giasanpham">250.000đ</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="product-item">
+                        <div class="product-top">
+                            <a  href="" class="sanpham1">
+                                <img src="../Img/5-sp4.jpg">
+                            </a>
+                        </div>
+                        <div class="thongtinsanpham">
+                            <a href="" class="product-name">Dán chống va đập KingKong cho iPhone 11 Pro</a>
+                            <div class="giasanpham">250.000đ</div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div id="sanphambanchay">
+            <ul class="sanpham">
+                <li>
+                    <div class="product-item">
+                        <div class="product-top">
+                            <a  href="" class="sanpham1">
+                                <img src="../Img/5-sp5.jpg">
+                            </a>
+                        </div>
+                        <div class="thongtinsanpham">
+                            <a href="" class="product-name">Sạc nhanh 20W Apple</a>
+                            <div class="giasanpham">620.000đ</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="product-item">
+                        <div class="product-top">
+                            <a  href="" class="sanpham1">
+                                <img src="../Img/5-sp6.jpg">
+                            </a>
+                        </div>
+                        <div class="thongtinsanpham">
+                            <a href="" class="product-name">Dán chống va đập cao capas cho Samsung Galaxy Note 20 Ultra</a>
+                            <div class="giasanpham">350.000đ</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="product-item">
+                        <div class="product-top">
+                            <a  href="" class="sanpham1">
+                                <img src="../Img/5-sp7.jpg">
+                            </a>
+                        </div>
+                        <div class="thongtinsanpham">
+                            <a href="" class="product-name">Sạc nhanh Anker Powerport III Nano 20W</a>
+                            <div class="giasanpham">360.000đ</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="product-item">
+                        <div class="product-top">
+                            <a  href="" class="sanpham1">
+                                <img src="../Img/5-sp8.jpg">
+                            </a>
+                        </div>
+                        <div class="thongtinsanpham">
+                            <a href="" class="product-name">Miếng dán cường lực cho iPhone 11 Pro</a>
+                            <div class="giasanpham">351.000đ</div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div id="sanphammoi">
+            <ul class="sanpham">
+                <li>
+                    <div class="product-item">
+                        <div class="product-top">
+                            <a  href="" class="sanpham1">
+                                <img src="../Img/5-sp9.jpg">
+                            </a>
+                        </div>
+                        <div class="thongtinsanpham">
+                            <a href="" class="product-name">Bút cảm ứng Apple Pencil 2</a>
+                            <div class="giasanpham">3.300.000đ</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="product-item">
+                        <div class="product-top">
+                            <a  href="" class="sanpham1">
+                                <img src="../Img/5-sp10.jpg">
+                            </a>
+                        </div>
+                        <div class="thongtinsanpham">
+                            <a href="" class="product-name">Dán cường lực Camera iPhone 13 Pro/13 Pro Max</a>
+                            <div class="giasanpham">351.000đ</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="product-item">
+                        <div class="product-top">
+                            <a  href="" class="sanpham1">
+                                <img src="../Img/5-sp11.jpg">
+                            </a>
+                        </div>
+                        <div class="thongtinsanpham">
+                            <a href="" class="product-name">Dán cường lực iPhone 13/13 Pro Mipow Premium</a>
+                            <div class="giasanpham">351.000đ</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="product-item">
+                        <div class="product-top">
+                            <a  href="" class="sanpham1">
+                                <img src="../Img/5-sp12.jpg">
+                            </a>
+                        </div>
+                        <div class="thongtinsanpham">
+                            <a href="" class="product-name">Sạc nhanh Samsung 25W kèm cáp C to C</a>
+                            <div class="giasanpham">520.000đ</div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div id="sanphammoi">
+            <ul class="sanpham">
+                <li>
+                    <div class="product-item">
+                        <div class="product-top">
+                            <a  href="" class="sanpham1">
+                                <img src="../Img/5-sp13.jpg">
+                            </a>
+                        </div>
+                        <div class="thongtinsanpham">
+                            <a href="" class="product-name">Lót chuột Rapoo V1 30 x 25 cm</a>
+                            <div class="giasanpham">144.000đ</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="product-item">
+                        <div class="product-top">
+                            <a  href="" class="sanpham1">
+                                <img src="../Img/5-sp14.jpg">
+                            </a>
+                        </div>
+                        <div class="thongtinsanpham">
+                            <a href="" class="product-name">Chuột không dây Microsoft Arc</a>
+                            <div class="giasanpham">1.990.000đ</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="product-item">
+                        <div class="product-top">
+                            <a  href="" class="sanpham1">
+                                <img src="../Img/5-sp15.jpg">
+                            </a>
+                        </div>
+                        <div class="thongtinsanpham">
+                            <a href="" class="product-name">Bộ vệ sinh Laptop 6 món</a>
+                            <div class="giasanpham">135.000đ</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="product-item">
+                        <div class="product-top">
+                            <a  href="" class="sanpham1">
+                                <img src="../Img/5-sp16.jpg">
+                            </a>
+                        </div>
+                        <div class="thongtinsanpham">
+                            <a href="" class="product-name">Phần mềm Microsoft Office Home & Student 2021</a>
+                            <div class="giasanpham">2.190.000đ</div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div id="sanphammoi">
+            <ul class="sanpham">
+                <li>
+                    <div class="product-item">
+                        <div class="product-top">
+                            <a  href="" class="sanpham1">
+                                <img src="../Img/5-sp17.jpg">
+                            </a>
+                        </div>
+                        <div class="thongtinsanpham">
+                            <a href="" class="product-name">Bút Surface Pen</a>
+                            <div class="giasanpham">2.300.000đ</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="product-item">
+                        <div class="product-top">
+                            <a  href="" class="sanpham1">
+                                <img src="../Img/5-sp18.jpg">
+                            </a>
+                        </div>
+                        <div class="thongtinsanpham">
+                            <a href="" class="product-name">Webcam Rapoo C200 HD 720p</a>
+                            <div class="giasanpham">360.000đ</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="product-item">
+                        <div class="product-top">
+                            <a  href="" class="sanpham1">
+                                <img src="../Img/5-sp19.jpg">
+                            </a>
+                        </div>
+                        <div class="thongtinsanpham">
+                            <a href="" class="product-name">Webcam Rapoo C260 Full HD 1080p</a>
+                            <div class="giasanpham">670.000đ</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="product-item">
+                        <div class="product-top">
+                            <a  href="" class="sanpham1">
+                                <img src="../Img/5-sp20.jpg">
+                            </a>
+                        </div>
+                        <div class="thongtinsanpham">
+                            <a href="" class="product-name">Bộ vệ sinh Laptop Pro 10 món</a>
+                            <div class="giasanpham">225.000đ</div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+</div>
+    <footer>
+        <table>
+            <tr>
+                <td class="hd">Giới thiệu</td>
+                <td class="hd">Điều khoản</td>
+                <td class="hd"><img src="../Icon/icon-dienthoai.jpg">Đặt hàng: 1800 6936</td>
+            </tr>
+            <tr>
+                <td>Về chúng tôi</td>
+                <td>Điều khoản sử dụng</td>
+                <td class="hd" colspan="2"><img src="../Icon/Icon-diachi.png">Liên hệ</td>
+            </tr>
+            <tr>
+                <td>Sản phẩm</td>
+                <td>Quy tắc bảo mật</td>
+                <td>Tầng 3-4 Hub Building
+                    Q.Bình Thạnh, TP.Hồ Chí Minh</td>
+            </tr>
+            <tr>
+                <td>Khuyến mãi</td>
+                <td>Điều khoản</td>
+                <td>195/10E Điện Biên Phủ, P.15 ,</td>
+            </tr>
+            <tr>
+                <td>Tin tức</td>
+                <td></td>
+                <td>Q.Bình Thạnh, TP.Hồ Chí Minh</td>
+            </tr>
+            <tr>
+                <td>Cửa hàng</td>
+            </tr>
+            <tr>
+                <td>Liên hệ</td>
+            </tr>
+            <!-- <tr>
+                <td colspan="4"><div class="maps">
+                    <iframe src="https://www.google.com/maps/d/u/0/embed?mid=15OEDqG2herN9fyLjjI1P8xorc8Jaqwvy&ehbc=2E312F" 
+                width="340" height="360"></iframe>
+                </div></td>
+            </tr> -->
+        </table>
+        </footer>

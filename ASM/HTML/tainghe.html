@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tai nghe</title>
+    <link rel="stylesheet" href="../CSS/tainghe.css">
+    <script src="../JS/trangchu.js"></script>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <div id="menu">
+                <a href="trangchu.html" id="logo">
+                    <img src="../Img/logo.png">
+                </a>
+            <ul id="main-menu">
+                <li><a href="trangchu.html">Trang chủ</a></li>
+                <li><a href="gioithieu.html">Giới thiệu</a></li>
+                <li><a href="menu.html">Menu</a>
+                    <ul class="sub-menu">
+                        <li><a href="laptop.html">Laptop</a></li>
+                        <li><a href="mobile.html">Mobile</a></li>
+                        <li><a href="smartwatch.html">SmartWatch</a></li>
+                        <li><a href="tainghe.html">Tai nghe</a></li>
+                        <li><a href="phukien.html">Phụ kiện</a></li>
+                    </ul>
+                </li>
+                <li><a href="tintuc.html">Tin tức</a></li>
+                <li><a href="chinhsach.html">Chính sách</a></li>
+                <li><a href="lienhe.html">Liên hệ</a></li>
+                <li style="margin-left:220px;"><a href="dangky.html">Đăng ký</a></li>
+                <li><a>-</a></li>
+                <li><a href="dangnhap.html">Đăng nhập</a></li>
+            </ul>
+            </div>
+            <div class="menu-con">
+                <div class="bagach">
+                    <ion-icon name="menu"></ion-icon>
+                </div>
+            </div>
+        </nav>
+        <nav>
+            <body onload="load();">
+                <div class="than">
+                    <img src="../Img/1.jpg" id="hinh" alt="">
+                    <button class="trai" type="button" onclick="back();"> < </button> 
+                        <span id="ten">1/3</span>
+                            <button class="phai" type="button" onclick="next();"> > </button> 
+                </div>
+            </body>
+            <script>
+                var index = 1;
+                hinh = function () {
+                    document.getElementById("hinh").src = imgs[index];
+                    index++;
+                    if (index == 3) {
+                        index = 0;
+                    }
+                }
+                setInterval(next, 2000)
+            </script>
+        </nav>
+        <div class="sp">
+        <div class="heading">
+            <h3>Laptop</h3>
+        </div>
+        <div id="sanphammoi">
+            <ul class="sanpham">
+                <li>
+                    <div class="product-item">
+                        <div class="product-top">
+                            <a  href="" class="sanpham1">
+                                <img src="../Img/4-sp1.jpg">
+                            </a>
+                        </div>
+                        <div class="thongtinsanpham">
+                            <a href="" class="product-name">Moondrop Quarks</a>
+                            <div class="giasanpham">355.000đ</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="product-item">
+                        <div class="product-top">
+                            <a  href="" class="sanpham1">
+                                <img src="../Img/4-sp2.jpg">
+                            </a>
+                        </div>
+                        <div class="thongtinsanpham">
+                            <a href="" class="product-name">Sony MDR-EX155AP</a>
+                            <div class="giasanpham">355.000đ</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="product-item">
+                        <div class="product-top">
+                            <a  href="" class="sanpham1">
+                                <img src="../Img/4-sp3.jpg">
+                            </a>
+                        </div>
+                        <div class="thongtinsanpham">
+                            <a href="" class="product-name">JPL T110BT</a>
+                            <div class="giasanpham">435.000đ</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="product-item">
+                        <div class="product-top">
+                            <a  href="" class="sanpham1">
+                                <img src="../Img/4-sp4.jpg">
+                            </a>
+                        </div>
+                        <div class="thongtinsanpham">
+                            <a href="" class="product-name">Sony MDR-ZX110AP</a>
+                            <div class="giasanpham">495.000đ</div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div id="sanphambanchay">
+            <ul class="sanpham">
+                <li>
+                    <div class="product-item">
+                        <div class="product-top">
+                            <a  href="" class="sanpham1">
+                                <img src="../Img/4-sp5.jpg">
+                            </a>
+                        </div>
+                        <div class="thongtinsanpham">
+                            <a href="" class="product-name">KZ ZS T X</a>
+                            <div class="giasanpham">490.000đ</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="product-item">
+                        <div class="product-top">
+                            <a  href="" class="sanpham1">
+                                <img src="../Img/4-sp6.jpg">
+                            </a>
+                        </div>
+                        <div class="thongtinsanpham">
+                            <a href="" class="product-name">SoundPEATS G1</a>
+                            <div class="giasanpham">490.000đ</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="product-item">
+                        <div class="product-top">
+                            <a  href="" class="sanpham1">
+                                <img src="../Img/4-sp7.jpg">
+                            </a>
+                        </div>
+                        <div class="thongtinsanpham">
+                            <a href="" class="product-name">iClever IC-HS14 Kids</a>
+                            <div class="giasanpham">490.000đ</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="product-item">
+                        <div class="product-top">
+                            <a  href="" class="sanpham1">
+                                <img src="../Img/4-sp8.jpg">
+                            </a>
+                        </div>
+                        <div class="thongtinsanpham">
+                            <a href="" class="product-name">Moondrop Chu</a>
+                            <div class="giasanpham">490.000đ</div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div id="sanphammoi">
+            <ul class="sanpham">
+                <li>
+                    <div class="product-item">
+                        <div class="product-top">
+                            <a  href="" class="sanpham1">
+                                <img src="../Img/4-sp9.jpg">
+                            </a>
+                        </div>
+                        <div class="thongtinsanpham">
+                            <a href="" class="product-name">SoundMAGIC E80C</a>
+                            <div class="giasanpham">499.000đ</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="product-item">
+                        <div class="product-top">
+                            <a  href="" class="sanpham1">
+                                <img src="../Img/4-sp10.jpg">
+                            </a>
+                        </div>
+                        <div class="thongtinsanpham">
+                            <a href="" class="product-name">Moxpad X6</a>
+                            <div class="giasanpham">545.000đ</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="product-item">
+                        <div class="product-top">
+                            <a  href="" class="sanpham1">
+                                <img src="../Img/4-sp11.jpg">
+                            </a>
+                        </div>
+                        <div class="thongtinsanpham">
+                            <a href="" class="product-name">iWalk Amour Air Duo BTA002</a>
+                            <div class="giasanpham">555.000đ</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="product-item">
+                        <div class="product-top">
+                            <a  href="" class="sanpham1">
+                                <img src="../Img/4-sp12.jpg">
+                            </a>
+                        </div>
+                        <div class="thongtinsanpham">
+                            <a href="" class="product-name">Blon BL03</a>
+                            <div class="giasanpham">555.000đ</div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div id="sanphammoi">
+            <ul class="sanpham">
+                <li>
+                    <div class="product-item">
+                        <div class="product-top">
+                            <a  href="" class="sanpham1">
+                                <img src="../Img/4-sp13.jpg">
+                            </a>
+                        </div>
+                        <div class="thongtinsanpham">
+                            <a href="" class="product-name">Tanchjim Tanya</a>
+                            <div class="giasanpham">599.000đ</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="product-item">
+                        <div class="product-top">
+                            <a  href="" class="sanpham1">
+                                <img src="../Img/4-sp14.jpg">
+                            </a>
+                        </div>
+                        <div class="thongtinsanpham">
+                            <a href="" class="product-name">SoundPEATS Mac</a>
+                            <div class="giasanpham">630.000đ</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="product-item">
+                        <div class="product-top">
+                            <a  href="" class="sanpham1">
+                                <img src="../Img/4-sp15.jpg">
+                            </a>
+                        </div>
+                        <div class="thongtinsanpham">
+                            <a href="" class="product-name">iCleaver BTH13</a>
+                            <div class="giasanpham">655.000đ</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="product-item">
+                        <div class="product-top">
+                            <a  href="" class="sanpham1">
+                                <img src="../Img/4-sp16.jpg">
+                            </a>
+                        </div>
+                        <div class="thongtinsanpham">
+                            <a href="" class="product-name">Skillcandy Riff</a>
+                            <div class="giasanpham">685.000đ</div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div id="sanphammoi">
+            <ul class="sanpham">
+                <li>
+                    <div class="product-item">
+                        <div class="product-top">
+                            <a  href="" class="sanpham1">
+                                <img src="../Img/4-sp17.jpg">
+                            </a>
+                        </div>
+                        <div class="thongtinsanpham">
+                            <a href="" class="product-name">Moondrop Nekocake</a>
+                            <div class="giasanpham">925.000đ</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="product-item">
+                        <div class="product-top">
+                            <a  href="" class="sanpham1">
+                                <img src="../Img/4-sp18.jpg">
+                            </a>
+                        </div>
+                        <div class="thongtinsanpham">
+                            <a href="" class="product-name">FiiL CC2</a>
+                            <div class="giasanpham">1.150.000đ</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="product-item">
+                        <div class="product-top">
+                            <a  href="" class="sanpham1">
+                                <img src="../Img/4-sp19.jpg">
+                            </a>
+                        </div>
+                        <div class="thongtinsanpham">
+                            <a href="" class="product-name">Moondrop Kuroneko</a>
+                            <div class="giasanpham">1.250.000đ</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="product-item">
+                        <div class="product-top">
+                            <a  href="" class="sanpham1">
+                                <img src="../Img/4-sp20.jpg">
+                            </a>
+                        </div>
+                        <div class="thongtinsanpham">
+                            <a href="" class="product-name">Moondrop S parks</a>
+                            <div class="giasanpham">1.880.000đ</div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+</div>
+    <footer>
+        <table>
+            <tr>
+                <td class="hd">Giới thiệu</td>
+                <td class="hd">Điều khoản</td>
+                <td class="hd"><img src="../Icon/icon-dienthoai.jpg">Đặt hàng: 1800 6936</td>
+            </tr>
+            <tr>
+                <td>Về chúng tôi</td>
+                <td>Điều khoản sử dụng</td>
+                <td class="hd" colspan="2"><img src="../Icon/Icon-diachi.png">Liên hệ</td>
+            </tr>
+            <tr>
+                <td>Sản phẩm</td>
+                <td>Quy tắc bảo mật</td>
+                <td>Tầng 3-4 Hub Building
+                    Q.Bình Thạnh, TP.Hồ Chí Minh</td>
+            </tr>
+            <tr>
+                <td>Khuyến mãi</td>
+                <td>Điều khoản</td>
+                <td>195/10E Điện Biên Phủ, P.15 ,</td>
+            </tr>
+            <tr>
+                <td>Tin tức</td>
+                <td></td>
+                <td>Q.Bình Thạnh, TP.Hồ Chí Minh</td>
+            </tr>
+            <tr>
+                <td>Cửa hàng</td>
+            </tr>
+            <tr>
+                <td>Liên hệ</td>
+            </tr>
+            <!-- <tr>
+                <td colspan="4"><div class="maps">
+                    <iframe src="https://www.google.com/maps/d/u/0/embed?mid=15OEDqG2herN9fyLjjI1P8xorc8Jaqwvy&ehbc=2E312F" 
+                width="340" height="360"></iframe>
+                </div></td>
+            </tr> -->
+        </table>
+        </footer>

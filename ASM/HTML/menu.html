@@ -4,64 +4,80 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CÀ PHÊ TẠI NHÀ - The Coffee House</title>
+    <title>Menu</title>
     <link rel="stylesheet" href="../CSS/menu.css">
     <script src="../JS/trangchu.js"></script>
 </head>
 <body>
     <div class="container">
-        <header>
-            <span><img src="../Icon/Icon-diachi.png"/>154 Cửa hàng khắp cả nước</span>
-            <span><img src="../Icon/icon-dienthoai.jpg"/>Đặt hàng: 1800.6936</span>
-            <span><img src="../Icon/icon-shipper.jpg"/>Freeship từ 50.000vnd</span>
-        </header>
         <nav>
             <div id="menu">
                 <a href="trangchu.html" id="logo">
-                    <img src="../Img/logo-coffee-house-goc.png">
+                    <img src="../Img/logo.png">
                 </a>
             <ul id="main-menu">
-                <li><a href="caphe.html">Cà phê</a></li>
-                <li><a href="tra.html">Trà</a></li>
-                <li><a href="menu.html">Thực đơn</a>
+                <li><a href="trangchu.html">Trang chủ</a></li>
+                <li><a href="gioithieu.html">Giới thiệu</a></li>
+                <li><a href="menu.html">Menu</a>
                     <ul class="sub-menu">
-                        <li><a href="#">Hi-Tea Healthy</a></li>
-                        <li><a href="#">Cà Phê</a></li>
-                        <li><a href="#">Trà</a></li>
-                        <li><a href="#">Bánh & Snack</a></li>
-                        <li><a href="#">Món khác</a></li>
+                        <li><a href="laptop.html">Laptop</a></li>
+                        <li><a href="mobile.html">Mobile</a></li>
+                        <li><a href="smartwatch.html">SmartWatch</a></li>
+                        <li><a href="tainghe.html">Tai nghe</a></li>
+                        <li><a href="phukien.html">Phụ kiện</a></li>
                     </ul>
                 </li>
                 <li><a href="tintuc.html">Tin tức</a></li>
-                <li><a href="#">Cửa hàng</a></li>
+                <li><a href="chinhsach.html">Chính sách</a></li>
                 <li><a href="lienhe.html">Liên hệ</a></li>
                 <li style="margin-left:220px;"><a href="dangky.html">Đăng ký</a></li>
                 <li><a>-</a></li>
                 <li><a href="dangnhap.html">Đăng nhập</a></li>
             </ul>
             </div>
+            <div class="menu-con">
+                <div class="bagach">
+                    <ion-icon name="menu"></ion-icon>
+                </div>
+            </div>
         </nav>
         <nav>
-
+            <body onload="load();">
+                <div class="than">
+                    <img src="../Img/1.jpg" id="hinh" alt="">
+                    <button class="trai" type="button" onclick="back();"> < </button> 
+                        <span id="ten">1/3</span>
+                            <button class="phai" type="button" onclick="next();"> > </button> 
+                </div>
+            </body>
+            <script>
+                var index = 1;
+                hinh = function () {
+                    document.getElementById("hinh").src = imgs[index];
+                    index++;
+                    if (index == 3) {
+                        index = 0;
+                    }
+                }
+                setInterval(next, 2000)
+            </script>
         </nav>
-        <div class="quangcao">
-            <img src="../img/banner-cafe.png">
-        </div>
+        <div class="sp">
         <div class="heading">
-            <p>Hi-Tea Trà</p>
+            <h3>SẢN PHẨM MỚI</h3>
         </div>
-        <div id="tra">
+        <div id="sanphammoi">
             <ul class="sanpham">
                 <li>
                     <div class="product-item">
                         <div class="product-top">
                             <a  href="" class="sanpham1">
-                                <img src="../Img/new-hi-tea-dao.png">
+                                <img src="../Img/1-sp1.jpg">
                             </a>
                         </div>
                         <div class="thongtinsanpham">
-                            <a href="" class="product-name">Hi-Tea Đào</a>
-                            <div class="giasanpham">45.000đ</div>
+                            <a href="" class="product-name">Acer Nitro 5 Tiger</a>
+                            <div class="giasanpham">23,490,000đ</div>
                         </div>
                     </div>
                 </li>
@@ -69,12 +85,12 @@
                     <div class="product-item">
                         <div class="product-top">
                             <a  href="" class="sanpham1">
-                                <img src="../Img/hi-tea-yuzu.png">
+                                <img src="../Img/1-sp2.jpg">
                             </a>
                         </div>
                         <div class="thongtinsanpham">
-                            <a href="" class="product-name">Hi-Tea Yuzu</a>
-                            <div class="giasanpham">45.000đ</div>
+                            <a href="" class="product-name">Acer Predator Triton 500 SE</a>
+                            <div class="giasanpham">104,990,000đ</div>
                         </div>
                     </div>
                 </li>
@@ -82,12 +98,12 @@
                     <div class="product-item">
                         <div class="product-top">
                             <a  href="" class="sanpham1">
-                                <img src="../Img/hi-tea-da-tuyet.png">
+                                <img src="../Img/1-sp3.jpg">
                             </a>
                         </div>
                         <div class="thongtinsanpham">
-                            <a href="" class="product-name">Hi-Tea Đá Tuyết Yuzu Vải</a>
-                            <div class="giasanpham">58.000đ</div>
+                            <a href="" class="product-name">Asus VivoBook Pro 15 OLED</a>
+                            <div class="giasanpham">22,790,000đ</div>
                         </div>
                     </div>
                 </li>
@@ -95,32 +111,32 @@
                     <div class="product-item">
                         <div class="product-top">
                             <a  href="" class="sanpham1">
-                                <img src="../Img/hi-tea-xoai-dao.png">
+                                <img src="../Img/1-sp4.jpg">
                             </a>
                         </div>
                         <div class="thongtinsanpham">
-                            <a href="" class="product-name">Hi-Tea Đá Tuyết Yuzu Vải</a>
-                            <div class="giasanpham">58.000đ</div>
+                            <a href="" class="product-name">Asus TUF Dash F15</a>
+                            <div class="giasanpham">18,450,000đ</div>
                         </div>
                     </div>
                 </li>
             </ul>
         </div>
         <div class="heading">
-            <p>Cà Phê Việt Nam</p>
+            <h3>SẢN PHẨM BÁN CHẠY</h3>
         </div>
-        <div id="caphe">
+        <div id="sanphambanchay">
             <ul class="sanpham">
                 <li>
                     <div class="product-item">
                         <div class="product-top">
                             <a  href="" class="sanpham1">
-                                <img src="../Img/bac-siu-da.png">
+                                <img src="../Img/1-sp5.jpg">
                             </a>
                         </div>
                         <div class="thongtinsanpham">
-                            <a href="" class="product-name">Bạc Sỉu Đá</a>
-                            <div class="giasanpham">45.000đ</div>
+                            <a href="" class="product-name">Asus TUF A15</a>
+                            <div class="giasanpham">22,290,000đ</div>
                         </div>
                     </div>
                 </li>
@@ -128,12 +144,12 @@
                     <div class="product-item">
                         <div class="product-top">
                             <a  href="" class="sanpham1">
-                                <img src="../Img/ca-phe-sua-da.png">
+                                <img src="../Img/1-sp6.jpg">
                             </a>
                         </div>
                         <div class="thongtinsanpham">
-                            <a href="" class="product-name">Cà Phê Sữa Đá</a>
-                            <div class="giasanpham">29.000đ</div>
+                            <a href="" class="product-name">Asus TUF F15</a>
+                            <div class="giasanpham">25,990,000đ</div>
                         </div>
                     </div>
                 </li>
@@ -141,12 +157,12 @@
                     <div class="product-item">
                         <div class="product-top">
                             <a  href="" class="sanpham1">
-                                <img src="../Img/ca-phe-den-da.png">
+                                <img src="../Img/1-sp7.jpg">
                             </a>
                         </div>
                         <div class="thongtinsanpham">
-                            <a href="" class="product-name">Cà Phê Đen Đá</a>
-                            <div class="giasanpham">29.000đ</div>
+                            <a href="" class="product-name">Asus ROG Strix G17</a>
+                            <div class="giasanpham">37,490,000đ</div>
                         </div>
                     </div>
                 </li>
@@ -154,259 +170,17 @@
                     <div class="product-item">
                         <div class="product-top">
                             <a  href="" class="sanpham1">
-                                <img src="../Img/ca-phe-den-nong.png">
+                                <img src="../Img/1-sp8.jpg">
                             </a>
                         </div>
                         <div class="thongtinsanpham">
-                            <a href="" class="product-name">Cà Phê Đen Nóng</a>
-                            <div class="giasanpham">35.000đ</div>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="product-item">
-                        <div class="product-top">
-                            <a  href="" class="sanpham1">
-                                <img src="../Img/ca-phe-sua-nong.png">
-                            </a>
-                        </div>
-                        <div class="thongtinsanpham">
-                            <a href="" class="product-name">Cà Phê Sữa Nóng</a>
-                            <div class="giasanpham">35.000đ</div>
+                            <a href="" class="product-name">Asus ROG Flow X13</a>
+                            <div class="giasanpham">38,490,000đ</div>
                         </div>
                     </div>
                 </li>
             </ul>
         </div>
-        <div class="heading">
-            <p>Cà Phê Tại Nhà</p>
-        </div>
-        <div id="caphe">
-            <ul class="sanpham">
-                <li>
-                    <div class="product-item">
-                        <div class="product-top">
-                            <a  href="chitietcaphe1.html" class="sanpham1">
-                                <img src="../img/caphe/caphe1.png">
-                            </a>
-                        </div>
-                        <div class="thongtinsanpham">
-                            <a href="chitietcaphe1.html" class="product-name">Cà Phê Rang Xay Original 1 250gr</a>
-                            <div class="giasanpham">49.000 đ</div>
-                            <del>59.000đ</del>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="product-item">
-                        <div class="product-top">
-                            <a  href="" class="sanpham1">
-                                <img src="../img/caphe/caphe2.png">
-                            </a>
-                        </div>
-                        <div class="thongtinsanpham">
-                            <a href="" class="product-name">Cà Phê Hòa Tan Đậm Vị Việt Túi 40x16G</a>
-                            <div class="giasanpham">79.000 đ</div>
-                            <del>98.000 đ</del>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="product-item">
-                        <div class="product-top">
-                            <a  href="" class="sanpham1">
-                                <img src="../img/caphe/caphe3.png">
-                            </a>
-                        </div>
-                        <div class="thongtinsanpham">
-                            <a href="" class="product-name">Cà Phê Sữa Đá Hòa Tan Hộp 10 gói</a>
-                            <div class="giasanpham">39.000 đ</div>
-                            <del>44.000 đ</del>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="product-item">
-                        <div class="product-top">
-                            <a  href="" class="sanpham1">
-                                <img src="../img/caphe/caphe4.png">
-                            </a>
-                        </div>
-                        <div class="thongtinsanpham">
-                            <a href="" class="product-name">Cà Phê Sữa Đá Hòa Tan Đậm Vị Hộp 18 gói x 16gr</a>
-                            <div class="giasanpham">39.000 đ</div>
-                            <del>48.000 đ</del>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="product-item">
-                        <div class="product-top">
-                            <a  href="" class="sanpham1">
-                                <img src="../img/caphe/caphe5.png">
-                            </a>
-                        </div>
-                        <div class="thongtinsanpham">
-                            <a href="" class="product-name">Cà Phê Sữa Đá Hòa Tan Túi 25 x 22gr</a>
-                            <div class="giasanpham">79.000 đ</div>
-                            <del>98.000 đ</del>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="product-item">
-                        <div class="product-top">
-                            <a  href="" class="sanpham1">
-                                <img src="../img/caphe/caphe6.png">
-                            </a>
-                        </div>
-                        <div class="thongtinsanpham">
-                            <a href="" class="product-name">Cà Phê Arabica</a>
-                            <p>98.000 đ<p>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="product-item">
-                        <div class="product-top">
-                            <a  href="" class="sanpham1">
-                                <img src="../img/caphe/caphe7.png">
-                            </a>
-                        </div>
-                        <div class="thongtinsanpham">
-                            <a href="" class="product-name">Cà phê sữa đá pack 6 lon</a>
-                            <div class="giasanpham">69.000 đ</div>
-                            <del>83.000 đ</del>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="product-item">
-                        <div class="product-top">
-                            <a  href="" class="sanpham1">
-                                <img src="../img/caphe/caphe8.png">
-                            </a>
-                        </div>
-                        <div class="thongtinsanpham">
-                            <a href="" class="product-name">Thùng 24 Lon Cà Phê Sữa Đá</a>
-                            <div class="giasanpham">269.000 đ</div>
-                            <del>330.000 đ</del>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    <div class="heading">
-        <p>Trà Tại Nhà</p>
-    </div>
-    <div id="tra">
-        <ul class="sanpham">
-            <li>
-                <div class="product-item">
-                    <div class="product-top">
-                        <a  href="" class="sanpham1">
-                            <img src="../img/tra/tra1.png">
-                        </a>
-                    </div>
-                    <div class="thongtinsanpham">
-                        <a href="" class="product-name">Giftset Trà Tearoma</a>
-                        <div class="giasanpham">169.000 đ</div>
-                    </div>
-                </div>
-            </li>
-            <li>
-                <div class="product-item">
-                    <div class="product-top">
-                        <a  href="" class="sanpham1">
-                            <img src="../img/tra/tra2.png">
-                        </a>
-                    </div>
-                    <div class="thongtinsanpham">
-                        <a href="" class="product-name">Trà Đào Túi Lọc Tearoma 20 x 2gr</a>
-                        <div class="giasanpham">28.000 đ</div>
-                    </div>
-                </div>
-            </li>
-            <li>
-                <div class="product-item">
-                    <div class="product-top">
-                        <a  href="" class="sanpham1">
-                            <img src="../img/tra/tra3.png">
-                        </a>
-                    </div>
-                    <div class="thongtinsanpham">
-                        <a href="" class="product-name">Trà Lài Túi Lọc Tearoma 20 x 2gr</a>
-                        <div class="giasanpham">28.000 đ</div>
-                    </div>
-                </div>
-            </li>
-            <li>
-                <div class="product-item">
-                    <div class="product-top">
-                        <a  href="" class="sanpham1">
-                            <img src="../img/tra/tra4.png">
-                        </a>
-                    </div>
-                    <div class="thongtinsanpham">
-                        <a href="" class="product-name">Trà Oolong Túi Lọc Tearoma 20 x 2gr</a>
-                        <div class="giasanpham">28.000 đ</div>
-                    </div>
-                </div>
-            </li>
-            <li>
-                <div class="product-item">
-                    <div class="product-top">
-                        <a  href="" class="sanpham1">
-                            <img src="../img/tra/tra5.png">
-                        </a>
-                    </div>
-                    <div class="thongtinsanpham">
-                        <a href="" class="product-name">Trà Sen Túi Lọc Tearoma 20 x 2gr</a>
-                        <div class="giasanpham">28.000 đ</div>
-                    </div>
-                </div>
-            </li>
-            <li>
-                <div class="product-item">
-                    <div class="product-top">
-                        <a  href="" class="sanpham1">
-                            <img src="../img/tra/tra6.png">
-                        </a>
-                    </div>
-                    <div class="thongtinsanpham">
-                        <a href="" class="product-name">Trà Xanh Lá Tearoma 100gr</a>
-                        <div class="giasanpham">74.000 đ</div>
-                    </div>
-                </div>
-            </li>
-            <li>
-                <div class="product-item">
-                    <div class="product-top">
-                        <a  href="" class="sanpham1">
-                            <img src="../img/tra/tra7.png">
-                        </a>
-                    </div>
-                    <div class="thongtinsanpham">
-                        <a href="" class="product-name">Trà Sen Lá Tearoma 100gr</a>
-                        <div class="giasanpham">79.000 đ</div>
-                    </div>
-                </div>
-            </li>
-            <li>
-                <div class="product-item">
-                    <div class="product-top">
-                        <a  href="" class="sanpham1">
-                            <img src="../img/tra/tra8.png">
-                        </a>
-                    </div>
-                    <div class="thongtinsanpham">
-                        <a href="" class="product-name">Trà Oolong Lá Tearoma 100gr</a>
-                        <div class="giasanpham">98.000 đ</div>
-                    </div>
-                </div>
-            </li>
-        </ul>
-    </div>
 </div>
     <footer>
         <table>

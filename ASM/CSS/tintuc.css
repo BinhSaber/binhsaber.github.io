@@ -53,12 +53,16 @@ span {
 
 #main-menu ul.sub-menu {
     position: absolute;
-    background-color: wheat;
-    padding: 15px 0px;
+    background-color: black;
+    padding: 5px 0px;
     list-style: none;
     width: 200px;
     border: 1px solid gray;
     display: none;
+}
+
+#main-menu ul.sub-menu li:hover {
+    background-color: white;
 }
 
 #main-menu li:hover>ul.sub-menu{
