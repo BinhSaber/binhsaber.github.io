@@ -25,12 +25,7 @@ span {
 }
 
 #menu {
-    background-color: cornsilk;
-}
-
-#menu>a>img {
-    width: 200px;
-    height: 100px;
+    background-color: black;
 }
 
 #main-menu {
@@ -40,12 +35,17 @@ span {
     margin: 15px 0px 15px 0px;
 }
 
+#menu>a>img {
+    width: 200px;
+    height: 100px;
+}
+
 #main-menu li {
     position: relative;
 }
 
 #main-menu li a {
-    color: black;
+    color: white;
     display: block;
     padding: 18px 20px;
     text-decoration: none;
